@@ -65,4 +65,8 @@ public class MethodClosure extends Closure {
             return getMethod();
         } else  return super.getProperty(property);        
     }
+
+    private Object readResolve() {
+        throw new UnsupportedOperationException();
+    }
 }
